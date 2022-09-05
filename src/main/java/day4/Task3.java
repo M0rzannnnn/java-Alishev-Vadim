@@ -18,7 +18,6 @@ public class Task3 {
                 max=sum;
                 indexMax=i;
             }
-
         }
         System.out.println(indexMax);
     }
