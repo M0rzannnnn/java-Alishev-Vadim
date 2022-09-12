@@ -18,19 +18,21 @@ public class Teacher {
     public void evaluate (Student Student1){
         Random rdn = new Random();
         int assessment = rdn.nextInt(4) + 2;
+        String evaluation = "";
         switch (assessment) {
             case 2:
-                System.out.println("Преподаватель " + name + " оценила студента с именем " + Student1.name + " по предмету " + subject + " на оценку Неудовлетворительно");
+                evaluation = "Неудовлетворительно";
                 break;
             case 3:
-                System.out.println("Преподаватель " + name + " оценила студента с именем " + Student1.name + " по предмету " + subject + " на оценку Удовлетворительно");
+                evaluation = "Удовлетворительно";
                 break;
             case 4:
-                System.out.println("Преподаватель " + name + " оценила студента с именем " + Student1.name + " по предмету " + subject + " на оценку Хорошо");
+                evaluation = "Хорошо";
                 break;
             case 5:
-                System.out.println("Преподаватель " + name + " оценила студента с именем " + Student1.name + " по предмету " + subject + " на оценку Отлично");
+                evaluation = "Отлично";
                 break;
         }
+        System.out.println("Преподаватель " + name + " оценила студента с именем " + Student1.getName() + " по предмету " + subject + " на оценку" + evaluation);
     }
 }
