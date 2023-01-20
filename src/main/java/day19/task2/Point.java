@@ -37,4 +37,9 @@ class Point {
         result = 31 * result + y;
         return result;
     }
+    public String toString() {
+        return " координата по оси x = " + getX() + " , координата по оси y = " + getY();
+    }
+
+
 }
